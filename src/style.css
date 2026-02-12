@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+}
+.topbar,
+.open {
+  font-family: "Open Sans", sans-serif;
+}
+.hero {
+  background: url(img/hero-img.jpg) center/cover;
+  background: linear-gradient(
+    (rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1))
+  );
+}
+
+.menuopen {
+  transition: 0.3s ease;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+.desktopfix,
+.mobilfix {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  transition: 0.8s ease;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.icon {
+  position: relative;
+}
+
+.icon::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 25px;
+  height: 25px;
+  background: #ffb524;
+}
